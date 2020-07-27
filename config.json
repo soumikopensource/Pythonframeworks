@@ -1,0 +1,18 @@
+{
+
+  "params": {
+
+    "local_server": "True",
+    "local_url": "mysql://root:@localhost/coding trash",
+    "prod_url": "mysql://root:@localhost/coding trash",
+    "fb_url": "https://facebook.com/coding trash",
+    "tweet_url": "https://twitter.com/coding trash",
+    "git_url": "https://github.com/coding trash",
+    "blog_name": "Coding Trash",
+    "gmail_user": "devsoumik007@gmail.com",
+    "gmail_passwd": "cr7realmadrid"
+
+
+  }
+
+}
