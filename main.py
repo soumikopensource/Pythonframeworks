@@ -43,14 +43,16 @@ class Posts(db.Model):
     slug = db.Column(db.String(80), unique=False, nullable=False)
     content = db.Column(db.String(80), unique=False, nullable=False)
     date= db.Column(db.String(12), unique=False, nullable=False)
-    img_file= db.Column(db.String(20), unique=False, nullable=False)
+    img_file= db.Column(db.String(20), unique=False, nullable=True)
+    tagline= db.Column(db.String(20), unique=False, nullable=True)
+
 
 
 
 @app.route("/")
-def index():
-
-    return render_template('index.html',params=params)
+def index():# 5 post aayenge
+    posts=Posts.query.filter_by().all()[0:params['no_of_post']] # make it configurable
+    return render_template('index.html',params=params,posts=posts)
 #about route endpoint
 
 @app.route("/about")
